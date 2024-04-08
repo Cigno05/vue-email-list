@@ -25,7 +25,7 @@
       
       
       <ul>
-        <li v-for="email in arrayMailsComplete">{{ email }}</li>
+        <li v-if="arrayMails.length === mailsLength" v-for="email in arrayMails">{{ email }}</li>
       </ul>
       
     </div>
